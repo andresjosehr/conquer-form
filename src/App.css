@@ -5,3 +5,128 @@ body {
 div .css-wqi77k .qf-welcome-screen-block__content-wrapper{
   min-height: 80%;
 }
+
+
+
+/* Estilo para el select */
+.css-215dze-select {
+  appearance: none; /* Remueve el estilo nativo del select */
+  padding: 8px;
+  /* border: 2px solid #ccc; */
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%; /* Ajusta a la necesidad */
+}
+
+/* Icono de dropdown */
+.css-215dze-select {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%23333" d="M0 0l5 6 5-6H0z"/></svg>') no-repeat right 10px center;
+  background-size: 10px;
+}
+
+/* Opciones al abrir */
+.css-215dze-select option {
+  padding: 5px;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: flex;
+  /* width: 100px; */
+}
+
+.dropdown-button {
+  padding: 8px;
+  border: 2px solid #f7f7f7;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  color: #5e5e5e;
+  font-size: 14px;
+  /* width: 100px; */
+  
+}
+
+.dropdown-menu li{
+  padding: 0px 15px !important;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #eeeded;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 275px;
+  margin-top: 30px;
+  margin-left: -200px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1000;
+}
+/* Estilo general del scrollbar */
+.dropdown-menu::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    background-color: #f0f0f0; /* Fondo del contenedor del scrollbar */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del pulgar del scrollbar */
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9; /* Color del pulgar */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #fafafa; /* Espaciado entre el pulgar y el contenedor */
+}
+
+/* Hover sobre el pulgar del scrollbar */
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background-color: #808080; /* Color del pulgar al hacer hover */
+}
+
+/* Estilo de las áreas de desplazamiento (arriba y abajo) */
+.dropdown-menu::-webkit-scrollbar-button {
+    background-color: #c0c0c0; /* Color del botón */
+    border-radius: 50%; /* Forma redondeada */
+    height: 12px; /* Tamaño del botón */
+}
+
+/* Hover sobre los botones de desplazamiento */
+.dropdown-menu::-webkit-scrollbar-button:hover {
+    background-color: #808080; /* Color al hacer hover */
+}
+
+/* Estilo del track dentro del scrollbar */
+.dropdown-menu::-webkit-scrollbar-track {
+    background-color: #fafafa; /* Color del track */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+.dropdown-menu li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #eee;
+}
+
+.multipleChoice__optionKeyTip{
+  display: none !important;
+}
+
+
+.multipleChoice__optionWrapper .multipleChoice__optionKey{
+  min-width: 27px !important;
+}
