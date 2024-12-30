@@ -31,37 +31,33 @@ function App() {
     props.setIsCurrentBlockSafeToSwipe(false);
   }
 
-  const submitForm = (data, { completeForm, setIsSubmitting }: { completeForm: () => void; setIsSubmitting: (isSubmitting: boolean) => void }) => {
+  const submitForm = (data) => {
     const answers =  data.answers;
     const score = scores.reduce((acc, score) => {
       const fieldValue = answers[score.name]?.value[0];
       return (score[fieldValue] ?? 0) + acc;
     }, 0) / 5;
 
-    alert(`Tu puntaje es: ${score}`);
+    // alert(`Tu puntaje es: ${score}`);
 
     if(answers.age.value[0] === "<18" || score < 2 || answers.income.value[0] === 'Menos de 200 dólares mensuales.') {
-      alert('Primero');
+      // alert('Primero');
       window.location.href = 'https://calendly.com/d/cn79-sv7-b3x/sesion-de-claridad-desarrollo-full-stack-eu';
       return;
     }
 
     if(score >= 2 && score <= 3) {
-      alert('Segundo');
+      // alert('Segundo');
       window.location.href = 'https://calendly.com/d/cn79-sv7-b3x/sesion-de-claridad-desarrollo-full-stack-eu';
       return;
     }
 
     if(score >= 3 && score <= 4) {
-      alert('Tercero');
+      // alert('Tercero');
       window.location.href = 'https://calendly.com/d/cn79-sv7-b3x/sesion-de-claridad-desarrollo-full-stack-eu';
       return;
     }
 
-    // setTimeout(() => {
-    //   setIsSubmitting(false);
-    //   completeForm();
-    // }, 500);
   }
 
 
